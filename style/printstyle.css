@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root{
+    --dark-blue: #17224D;
+    --blue-green: #17E9E1;
+    --blue: #056ed8;
+    --grey-white: #c9cccc;
+    --white: #F5FAFA;
+}
+
+#sidebar{
+    display: none;
+}
+.navbar{
+    display: none;
+}
+header{
+    display: none;
+}
+.top-buttons{
+    display: none;
+}
+th,td{
+    font-size: 12px;
+}

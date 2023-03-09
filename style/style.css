@@ -108,10 +108,12 @@ nav ul li p{
     left: 100px;
     top: 0;
     background-color: var(--dark-blue);
+    color: var(--white);
     border-radius: 5px;
     padding: 10px 10px;
     font-size: 20px;
     width: max-content;
+    z-index: 999;
 }
 .content{
     width: 100%;
@@ -182,7 +184,7 @@ body.active nav ul li a p{
 header{
     display: flex;
     justify-content: space-between;
-    margin: 0 10px;
+    margin: 10px;
 }
 .header-end{
     display: flex;
@@ -199,9 +201,135 @@ header{
     align-items: center;
     font-size: 20px;
 }
+.search-date{
+    display: flex;
+    justify-content: center;
+}
+.search-date form{
+    display: flex;
+    flex-wrap: wrap;
+}
+.date-style input{
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid;
+}
+.date-style label{
+    font-size: 20px;
+    padding: 10px;
+}
+.date-submit button{
+    all: unset;
+    border: 1px solid var(--grey-white);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.date-submit button:hover{
+    background-color: var(--grey-white);
+}
 .green-btn{
     color: rgb(9, 131, 9);
 }
 .red-btn{
     color: rgb(219, 4, 4);
+}
+.container{
+    border: 2px solid var(--grey-white);
+    margin: 20px;
+    border-radius: 5px;
+    max-height: 500px;
+    height: auto;
+}
+.top-buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--grey-white);
+}
+.top-buttons button{
+    all: unset;
+    text-decoration: none;
+    color: var(--dark-blue);
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.top-buttons a{
+    text-decoration: none;
+    color: var(--dark-blue);
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 5px;
+}
+.top-buttons a:hover, .top-buttons button:hover{
+    border-color: var(--grey-white);
+}
+.top-buttons a:active, .top-buttons button:active{
+    background-color: var(--dark-blue);
+    color: var(--grey-white);
+}
+.table-wrapper{
+    margin: 10px;
+    border: 1px solid var(--grey-white);
+    border-radius: 2px;
+    max-height: 425px;
+    height: 100%;
+    max-width: 100%;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0;
+}
+table thead tr th{
+    position: sticky;
+    top: 0;
+    background-color: var(--grey-white);
+}
+.overflow{
+    overflow: auto;
+    height: 100%;
+}
+table th,table td{
+    padding: 10px;
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: var(--grey-white);
+}
+.action a{
+    text-decoration: none;
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.action .green-btn:hover{
+    color: var(--white);
+    background-color: rgb(9, 131, 9);
+    border-color: rgb(9, 131, 9);
+}
+.action .red-btn:hover{
+    color: var(--white);
+    background-color: rgb(219, 4, 4);
+    border-color: rgb(219, 4, 4);
+}
+.action{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+/* Scroll design */
+::-webkit-scrollbar{
+    background-color: var(--grey-white);
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--dark-blue);
 }

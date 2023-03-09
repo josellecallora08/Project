@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/90b8adf914.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Inventory</title>
+</head>
+<body>
+        <div id="sidebar">
+            <div class="logo">
+                <img src="Images/MikoreanLogo.svg" alt="Logo" width="50px" height="50px">
+                <h1>MIKorean</h1>
+            </div>
+            <div class="searchbar">
+                <label for="searchbar">
+                    <i class="fa-solid fa-search"></i>
+                </label>
+                <input type="search" id="searchbar">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-arrow-up-right-dots"></i>
+                            <span>Dashboard</span>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-peso-sign"></i>
+                            <span>Sales</span>
+                            <p>Sales</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            <span>Product</span>
+                            <p>Product</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-tag"></i>
+                            <span>Discount</span>
+                            <p>Discount</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <span>Sales Report</span>
+                            <p>Sales Report</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                            <span>Product Inventory</span>
+                            <p>Product Inventory</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="navbar">
+                <div>
+                    <button id="icon-sidebar" onclick="sidebarToggle()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+
+                <div class="navbar-end">
+                    <p>Welcome,
+                        <strong>Admin<span>!</span></strong>
+                    </p>
+                    <a href="">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Log Out</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Content -->
+            <header>
+                <div>
+                    <h2>Discount</h2>                    
+                </div>
+                <div class="header-end">
+                    <a href="">
+                        <span>Home</span>
+                    </a>
+                    <p> / </p>
+                    <a href="">
+                        <span>Discount</span>
+                    </a>
+                </div>
+            </header>
+            <div class="title">
+                <p>Total Number of Discounts: <span class="green-btn">[0]</span></p>
+                <p><span class="red-btn">[0]</span> Discounts are Expired</p>
+            </div>
+            <div class="container">
+                <div class="top-buttons">
+                    <a href="">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>Back</span>
+                    </a>
+
+                    <button>
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Add Discount</span>
+                    </button>
+                </div>
+                <div class="table-wrapper overflow">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Discount Name
+                                    </th>
+                                    <th>
+                                        Total Discount
+                                    </th>
+                                    <th>
+                                        Note
+                                    </th>
+                                    <th>
+                                        Date
+                                    </th>
+                                    <th>
+                                        Action
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Soju Date
+                                    </td>
+                                    <td>
+                                        <i class="fa-solid fa-peso-sign fa-sm"></i>
+                                        <span>25</span>
+                                    </td>
+                                    <td>
+                                        Soju
+                                    </td>
+                                    <td>
+                                        Soju
+                                    </td>
+                                    <td>
+                                        <div class="action">
+                                            <a href="" class="green-btn">
+                                                <i class="fa-solid fa-edit"></i>
+                                                <span>Edit</span>
+                                            </a>
+                                            <a href="" class="red-btn">
+                                                <i class="fa-solid fa-remove"></i>
+                                                <span>Remove</span>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+            <!-- End of Content -->
+            </div>
+        <script src="js/Function.js"></script>
+</body>
+</html>
