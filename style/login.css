@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background-color: #c9cccc;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  border: 1px solid #17224D;
+  max-width: 500px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+.container h1 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #17224D;
+  color: #c9cccc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-bottom: 1px solid #17224D;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  max-height: 200px;
+  height: 100%;
+}
+form div:nth-child(1) .user, form div:nth-child(1) .pass {
+  margin: 20px 0;
+}
+form .user, form .pass {
+  position: relative;
+}
+form input {
+  width: 250px;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid #17224D;
+  border-radius: 5px;
+}
+form label {
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  cursor: text;
+  opacity: 0.4;
+  transition: 0.5s;
+}
+form button {
+  all: unset;
+  position: absolute;
+  color: #c9cccc;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+}
+
+.user input:not(:-moz-placeholder-shown) ~ label, .pass input:not(:-moz-placeholder-shown) ~ label {
+  top: -10px;
+  background-color: white;
+  padding: 0 10px;
+  left: 10px;
+  opacity: 1;
+}
+
+.user input:focus ~ label, .user input:not(:placeholder-shown) ~ label, .pass input:focus ~ label, .pass input:not(:placeholder-shown) ~ label {
+  top: -10px;
+  background-color: white;
+  padding: 0 10px;
+  left: 10px;
+  opacity: 1;
+}
+
+.login-btn input {
+  border: none;
+  background-color: #c9cccc;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+.login-btn input:hover {
+  background-color: #17224D;
+  color: #f5fafa;
+}/*# sourceMappingURL=login.css.map */

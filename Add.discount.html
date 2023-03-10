@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/90b8adf914.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Inventory</title>
+</head>
+<body>
+            <div id="modal-product">
+                <div class="modal-container">
+                    <form action="">
+                        <h2>Create discount</h2>
+                        <div class="flex-input">
+                            <div class="first-container">
+                                <div>
+                                    <input type="text" id="discount_name" name="name" placeholder=" ">
+                                    <label for="discount_name">Discount Name</label>
+                                </div>
+                                <div>
+                                    <input type="date" id="date" name="date" placeholder=" ">
+                                    <label for="date">Date Expire</label>
+                                </div>
+                            </div>
+                            <div class="first-container">
+                                <div>
+                                    <input type="number" name="amount" id="profit" min="0" placeholder=" ">
+                                    <label for="profit">Amount</label>
+                                </div>
+                                <div>
+                                    <textarea name="note" id="desc" cols="30" rows="1" placeholder=" "></textarea>
+                                    <label for="desc"> Category / Description</label>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="submit-btn">
+                        <input type="submit" name="submit-form" value="Submit">
+                    </div>
+                        <button type="button" onclick="closeForm()">
+                            <i class="fa-solid fa-close"></i>
+                        </button>
+                        
+                    </form>
+                </div>
+            </div>
+        <script src="js/Function.js"></script>
+        
+</body>
+</html>

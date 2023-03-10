@@ -1,0 +1,98 @@
+$darkblue: #17224D;
+$bluegreen: #17E9E1;
+$blue: #056ed8;
+$greywhite: #c9cccc;
+$white: #f5fafa;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: $greywhite;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    border: 1px solid $darkblue;
+    max-width: 500px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    
+    h1{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: $darkblue;
+        color: $greywhite;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border-bottom: 1px solid $darkblue;
+    }
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    max-height: 200px;
+    height: 100%;
+    
+    div:nth-child(1) .user,  div:nth-child(1) .pass {
+        margin: 20px 0;
+    }
+    .user, .pass{
+        position: relative;
+    }
+    input{
+        width: 250px;
+        padding: 10px 20px;
+        outline: none;
+        border: 1px solid $darkblue;
+        border-radius: 5px;
+    }
+    label{
+        position: absolute;
+        top: 10px;
+        left: 22px;
+        cursor:text;
+        opacity: .4;
+        transition: .5s;
+    }
+    button{
+        all: unset;
+        position: absolute;
+        color: $greywhite;
+        cursor: pointer;
+        right:10px;
+        top: 10px;
+    }
+}
+
+.user input:focus ~ label, .user input:not(:placeholder-shown) ~ label, .pass input:focus ~ label, .pass input:not(:placeholder-shown) ~ label{
+    top: -10px;
+    background-color: white;
+    padding: 0 10px;
+    left: 10px;
+    opacity: 1;
+}
+
+.login-btn input{
+    border: none;
+    background-color: $greywhite;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .3s;
+    
+    &:hover{
+        background-color: $darkblue;
+        color: $white;
+    }
+}

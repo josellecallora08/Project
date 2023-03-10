@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/90b8adf914.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Inventory</title>
+</head>
+<body>
+            <div id="modal-product">
+                <div class="modal-container">
+                    <form action="">
+                        <h2>Add Supplier</h2>
+                        <div class="flex-input">
+                            <div class="first-container">
+                                <div>
+                                    <input type="text" id="product_name" name="name" placeholder=" ">
+                                    <label for="product_name">Suppler Name</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="address" name="address" placeholder=" ">
+                                    <label for="address">Address</label>
+                                </div>
+                                <div>
+                                    <input type="text" id="contact_person" name="cperson" placeholder=" ">
+                                    <label for="contact_person">Contact Person</label>
+                                </div>
+                            </div>
+                            <div class="first-container">
+                                <div>
+                                    <input type="tel" id="contact_no" name="contact" placeholder=" ">
+                                    <label for="contact_no">Contact No.</label>
+                                </div>
+                                <div>
+                                    <textarea name="note" id="desc" cols="30" rows="1" placeholder=" "></textarea>
+                                    <label for="desc">Note</label>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="submit-btn">
+                        <input type="submit" name="submit-form" value="Submit">
+                    </div>
+                        <button type="button" onclick="closeForm()">
+                            <i class="fa-solid fa-close"></i>
+                        </button>
+                        
+                    </form>
+                </div>
+            </div>
+        <script src="js/Function.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/90b8adf914.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Inventory</title>
+</head>
+<body>
+            <div id="modal-product">
+                <div class="modal-container">
+                    <form action="">
+                        <h2>Add product</h2>
+                        <div class="flex-input">
+                            <div class="first-container">
+                                <div>
+                                    <input type="text" id="product_name" name="code" placeholder=" ">
+                                    <label for="product_name">Product Name</label>
+                                </div>
+                                <div>
+                                    <input type="date" id="date_arrival" placeholder=" ">
+                                    <label for="date_arrival">Date Arrival</label>
+                                </div>
+                                <div>
+                                    <textarea name="name" id="desc" cols="30" rows="1" placeholder=" "></textarea>
+                                    <label for="desc"> Category / Description</label>
+                                </div>
+                                <div>
+                                    <select name="supplier" id="supplier" placeholder=" ">
+                                        <option></option>
+                                        <option value="Joselle">Joselle</option>
+                                    </select>
+                                    <label for="">Supplier</label>
+                                </div>
+                            </div>
+                            <div class="first-container">
+                                <div>
+                                    <input type="text" name="price" id="price" onkeyup="sum()" placeholder=" ">
+                                    <label for="price">Selling Price</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="o_price" id="o_price"
+                                    onkeyup="sum()" placeholder=" ">
+                                    <label for="o_price">Original Price</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="profit" id="profit" placeholder=" " readonly>
+                                    <label for="profit">Profit</label>
+                                </div>
+                                <div>
+                                    <input type="number" min="0" name="qty" id="qty" placeholder=" "> 
+                                    <label for="qty">Quantity</label>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="submit-btn">
+                        <input type="submit" name="submit-form" value="Submit">
+                    </div>
+                        <button type="button" onclick="closeForm()">
+                            <i class="fa-solid fa-close"></i>
+                        </button>
+                        
+                    </form>
+                </div>
+            </div>
+        <script src="js/Function.js"></script>
+ <script>
+        var profit = document.getElementById('profit');
+    function sum(){
+        var sPrice = document.getElementById('price').value;
+        var oPrice = document.getElementById('o_price').value;
+        var result = sPrice - oPrice;      
+    if(!isNaN(result)){
+       profit.value = result;
+    }   
+    }
+ </script>
+        
+</body>
+</html>
